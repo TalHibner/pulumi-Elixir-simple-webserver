@@ -8,9 +8,9 @@
 4. Run the following command to deploy it in AWS:  
    `npm install --save @pulumi/cloud  @pulumi/cloud-aws`  
 5. We are running on AWS, so please configure the provider, the region and use Fargate:  
-   `pulumi config set cloud:provider aws`.
-   `pulumi config set aws:region us-east-1` .
-   `pulumi config set cloud-aws:useFargate true`. 
+   `pulumi config set cloud:provider aws`    
+   `pulumi config set aws:region us-east-1`   
+   `pulumi config set cloud-aws:useFargate true`   
 
 ## Installation  
 
