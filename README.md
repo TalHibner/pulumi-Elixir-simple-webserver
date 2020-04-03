@@ -18,9 +18,9 @@
    and pushed the image into the repository. 
    This all happens automatically and does not require manual configuration on your part.  
 2. View the Outputs URL and copy-paste it to the browser, dont forget to add `:8080` at the end.
-3. For POST request for example:
+3. For POST request for example:   
    `curl -X POST Outputs.url:8080 -H "Content-type:application/json" -d "{\"name\":\"Spring Forever\",\"author\":\"pivotal\"}"`
-   Taken from:
+   Taken from:   
    `Outputs:`
     `url: "http://d9bfe889-408de1b-abb36ca752722d8d.elb.us-east-1.amazonaws.com"`
    
