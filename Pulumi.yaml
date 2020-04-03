@@ -1,0 +1,3 @@
+name: pulumi-Elixir-simple-webserver
+runtime: nodejs
+description: A minimal JavaScript Pulumi program
