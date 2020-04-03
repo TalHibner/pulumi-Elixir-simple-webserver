@@ -1,10 +1,15 @@
 defmodule SimpleWebserver.Application do
-  @moduledoc false
+@moduledoc "OTP Application specification for SimpleWebserver"
+
   use Application
 
   def start(_type, _args) do
     children = [
-      {SimpleWebserver.PlugAdapter, plug: SnoopRequest, port: 8080}
+      Plug.Cowboy.child_spec(
+        scheme: :http,
+        plug: SimpleWebserver.Endpoint,
+        options: [port: 8080]
+      )
     ]
 
     opts = [strategy: :one_for_one, name: SimpleWebserver.Supervisor]
